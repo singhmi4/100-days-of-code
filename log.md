@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 0: January 10, 2018
+### Day 1: January 10, 2018
 
 **Today's Progress**: Completed the CommandLine section in Web Development Bootcamp on Udemy.
 Installed CodeAnywhere, installed the node.js and mongoDB files, learned basic command line actions
