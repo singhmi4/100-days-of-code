@@ -16,6 +16,7 @@ Installed CodeAnywhere, installed the node.js and mongoDB files, learned basic c
 **Thoughts:** 
 
 *Unity Game Development:*
+
 Creating character movement in Unity was a lot simpler than expected. However, character camera rotation was slightly more challenging. Adding the Y rotation camera movement to the Player GameObject directly caused the Player to move forward/backward. The script caused the player to rotate in the Y direction thus affecting the velocity in the Y direction. The solution to this, pointed out by the Unity instructor, was to create a GameObject specifically for pivoting along the x-axis and nest it within the Player object and nest the Main Camera in the new GameObject. This didn't cause the Player itself to rotate when the camera was rotated about the x-axis.
 
 *Web Development:*
