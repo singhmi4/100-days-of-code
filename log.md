@@ -8,6 +8,20 @@ Installed CodeAnywhere, installed the node.js and mongoDB files, learned basic c
 **Thoughts:** I did not know too much about back-end developing before installing CodeAnywhere application. However, I feel a lot better after installing the application, learning the basic command line actions, and getting a better understanding about what Node.JS is and why it is used
 
 **Link to Work:** Nothing yet
+
+### Day 2: January 11, 2018
+
+**Today's Progress**: Defined 3D Character movement and camera rotation in Unity
+
+**Thoughts:** 
+
+*Unity Game Development:*
+Creating character movement in Unity was a lot simpler than expected. However, character camera rotation was slightly more challenging. Adding the Y rotation camera movement to the Player GameObject directly caused the Player to move forward/backward. The script caused the player to rotate in the Y direction thus affecting the velocity in the Y direction. The solution to this, pointed out by the Unity instructor, was to create a GameObject specifically for pivoting along the x-axis and nest it within the Player object and nest the Main Camera in the new GameObject. This didn't cause the Player itself to rotate when the camera was rotated about the x-axis.
+
+*Web Development:*
+Update later to come!
+
+**Link to Work:** Nothing yet
 <!--
 ##### Day 0: February 30, 2016 (Example 1)
 ##### (delete me or comment me out)
