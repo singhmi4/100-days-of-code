@@ -1,11 +1,14 @@
 # 100 Days Of Code - Log
 
-### Day 1: January 10, 2018
+### Day 3: January 12, 2018
 
-**Today's Progress**: Completed the CommandLine section in Web Development Bootcamp on Udemy.
-Installed CodeAnywhere, installed the node.js and mongoDB files, learned basic command line actions
+**Today's Progress**: Installed a few NPM packages and created javascript from the content.
 
-**Thoughts:** I did not know too much about back-end developing before installing CodeAnywhere application. However, I feel a lot better after installing the application, learning the basic command line actions, and getting a better understanding about what Node.JS is and why it is used
+**Thoughts:** 
+
+*Web Development:*
+
+It was a very simple process installing NPM packages in the CodeAnywhere SSH Terminal. The main exercise was to generate a random list of products and prices using an NPM package called faker which generates a host of random data. The exercise was very straightforward as in I simply needed to make a for loop which printed out the randomly generated product and price using the pre-defined functions that came with the NPM package.
 
 **Link to Work:** Nothing yet
 
@@ -22,6 +25,15 @@ Creating character movement in Unity was a lot simpler than expected. However, c
 *Web Development:*
 
 Learned what Node.js does and how to run in the commandline for the server I've created. It was very cool knowing that I can run Javascript using Node in the commandline. The exercises were a little tricky since I hadn't made functions and loops using JS in awhile. What had me stuck for a moment was that returning a value in javascript did not show up in the commandline when ran with node. In order for it show was to console.log the returned value to make it show in the commandline. Very good to know moving forward.
+
+**Link to Work:** Nothing yet
+
+### Day 1: January 10, 2018
+
+**Today's Progress**: Completed the CommandLine section in Web Development Bootcamp on Udemy.
+Installed CodeAnywhere, installed the node.js and mongoDB files, learned basic command line actions
+
+**Thoughts:** I did not know too much about back-end developing before installing CodeAnywhere application. However, I feel a lot better after installing the application, learning the basic command line actions, and getting a better understanding about what Node.JS is and why it is used
 
 **Link to Work:** Nothing yet
 <!--
