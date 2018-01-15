@@ -1,5 +1,17 @@
 # 100 Days Of Code - Log
 
+### Day 4: January 15, 2018
+
+**Today's Progress**: Learned about Express.js framework and built my first 3 apps following the Web Developer Bootcamp course.
+
+**Thoughts:** 
+
+*Web Development:*
+
+It was super cool learning about installing Express and how to handle requests by sending information to the user back on the webpage. I was a little confused in the repeating word challenge in the Express Exercise because I was getting an error when I tried to use res.send() in the loop. I found out that I can only send (as of right now), one res.send() back to the user, so to show that the string repeated x times, I needed to build a new string in a for loop and finally res.send(newString) to the user after the loop is complete.
+
+**Link to Work:** Nothing yet
+
 ### Day 3: January 12, 2018
 
 **Today's Progress**: Installed a few NPM packages and created javascript from the content.
