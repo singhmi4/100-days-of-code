@@ -1,5 +1,29 @@
 # 100 Days Of Code - Log
 
+### Day 6 January 17, 2018
+
+**Today's Progress**: Introduced to .ejs files for creating html templates that have javascript logic built in
+
+**Thoughts:** 
+
+*Web Development:*
+
+EJS is simply an html file that has javascript logic built in. I need to get used to using the <%= %> tags for javascript code and the differences for adding content to the page and when it is simply logic based like if statements and loops. Moreover, I learned about the res.render() method which takes in the .ejs page as the first arg and then passes in a variable to the .ejs file that you would like to manipulate. For example, res.render("home.ejs", {variableExpress: variableEJS}). Also, I was re-introduced to objects in arrays and forEach loops which was a great refresher because I forgot how the syntax works for those variables.
+
+**Link to Work:** Nothing yet
+
+### Day 5 January 16, 2018
+
+**Today's Progress**: Setup navigational meshes and learned about raycasting in Unity
+
+**Thoughts:** 
+
+*Video Game Development:*
+
+I started off my Unity Game Dev Course session by setting up a navigational mesh that constrained the player's movement which is very important when designing levels. It was a very simple process of adding in the mesh through a few menu clicks. I then moved on to setting up a crosshair and created logic to allow the player to identify the object they are clicking by using RayCasting. The logic for raycasting was very straightforward where you use the ray cast method to collect hit detection data, the distance to extend your ray cast to, etc.
+
+**Link to Work:** Nothing yet
+
 ### Day 4: January 15, 2018
 
 **Today's Progress**: Learned about Express.js framework and built my first 3 apps following the Web Developer Bootcamp course.
