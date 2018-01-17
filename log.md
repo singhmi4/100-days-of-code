@@ -8,7 +8,7 @@
 
 *Web Development:*
 
-EJS is simply an html file that has javascript logic built in. I need to get used to using the <%= %> tags for javascript code and the differences for adding content to the page and when it is simply logic based like if statements and loops. Moreover, I learned about the <code>res.render()</code> method which takes in the .ejs page as the first arg and then passes in a variable to the .ejs file that you would like to manipulate. For example, res.render("home.ejs", {variableExpress: variableEJS}). Also, I was re-introduced to objects in arrays and forEach loops which was a great refresher because I forgot how the syntax works for those variables.
+EJS is simply an html file that has javascript logic built in. I need to get used to using the <code><%= %></code> tags for javascript code and the differences for adding content to the page and when it is simply logic based like if statements and loops. Moreover, I learned about the <code>res.render()</code> method which takes in the .ejs page as the first arg and then passes in a variable to the .ejs file that you would like to manipulate. For example, <code>res.render("home.ejs", {variableExpress: variableEJS})</code>. Also, I was re-introduced to objects in arrays and forEach loops which was a great refresher because I forgot how the syntax works for those variables.
 
 **Link to Work:** Nothing yet
 
@@ -32,7 +32,7 @@ I started off my Unity Game Dev Course session by setting up a navigational mesh
 
 *Web Development:*
 
-It was super cool learning about installing Express and how to handle requests by sending information to the user back on the webpage. I was a little confused in the repeating word challenge in the Express Exercise because I was getting an error when I tried to use res.send() in the loop. I found out that I can only send (as of right now), one res.send() back to the user, so to show that the string repeated x times, I needed to build a new string in a for loop and finally res.send(newString) to the user after the loop is complete.
+It was super cool learning about installing Express and how to handle requests by sending information to the user back on the webpage. I was a little confused in the repeating word challenge in the Express Exercise because I was getting an error when I tried to use <code>res.send()</code> in the loop. I found out that I can only send (as of right now), one res.send() back to the user, so to show that the string repeated x times, I needed to build a new string in a for loop and finally <code>res.send(newString)</code> to the user after the loop is complete.
 
 **Link to Work:** Nothing yet
 
