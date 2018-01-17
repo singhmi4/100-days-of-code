@@ -8,7 +8,7 @@
 
 *Web Development:*
 
-EJS is simply an html file that has javascript logic built in. I need to get used to using the <%= %> tags for javascript code and the differences for adding content to the page and when it is simply logic based like if statements and loops. Moreover, I learned about the res.render() method which takes in the .ejs page as the first arg and then passes in a variable to the .ejs file that you would like to manipulate. For example, res.render("home.ejs", {variableExpress: variableEJS}). Also, I was re-introduced to objects in arrays and forEach loops which was a great refresher because I forgot how the syntax works for those variables.
+EJS is simply an html file that has javascript logic built in. I need to get used to using the <%= %> tags for javascript code and the differences for adding content to the page and when it is simply logic based like if statements and loops. Moreover, I learned about the <code>res.render()</code> method which takes in the .ejs page as the first arg and then passes in a variable to the .ejs file that you would like to manipulate. For example, res.render("home.ejs", {variableExpress: variableEJS}). Also, I was re-introduced to objects in arrays and forEach loops which was a great refresher because I forgot how the syntax works for those variables.
 
 **Link to Work:** Nothing yet
 
