@@ -1,5 +1,17 @@
 # 100 Days Of Code - Log
 
+### Day 7 January 17, 2018
+
+**Today's Progress**: Learned about post requests, res.redirect, accessing data from form input using body parser, styling, header/footer templates, and API.
+
+**Thoughts:** 
+
+*Web Development:*
+
+In the latest course code-alongs, I created a few .ejs files which included styling and adding new elements to an array. Because I was already introduced to styling in the front-end section of the course I was able to understand the methods of linking the stylesheet to the ejs files by using the <code>link</code> tags. I also learned about creating header and footer files known as partials which stored the boiler plate code which can then be used as a template for each web page in the website. Accessing the data from the input form required the use of the <code>method</code> and <code>name</code> attributes and the NPM package body-parser. Body parser allows us to extract the form data as an object and have it saved as a variable. We then pushed it to an array and have it reload the page where the forEach loop was stored by using <code>res.redirect("/yourdirectory")</code>. I think I also get how forEach works! In the end, I was introduced to the basic concept of API which is simply code that we can take from another app/program to access their data and other functions for us to use for our own applications.
+
+**Link to Work:** Nothing yet
+
 ### Day 6 January 17, 2018
 
 **Today's Progress**: Introduced to .ejs files for creating html templates that have javascript logic built in
