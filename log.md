@@ -1,5 +1,18 @@
 # 100 Days Of Code - Log
 
+### Day 8 January 22, 2018
+
+**Today's Progress**: Learned about the API NPM package request, created a Movie Database search engine, created an app called Yelp Camp using bootstrap, and node
+
+**Thoughts:** 
+
+*Web Development:*
+
+It was great seeing Bootstrap return since I needed a refresher in the classes and html for creating sleek web pages. The use of APIs for the Movie Database app was also interesting because it showed how I can use data from another website to build my own website.
+
+**Link to Work:** Nothing yet
+
+
 ### Day 7 January 17, 2018
 
 **Today's Progress**: Learned about post requests, res.redirect, accessing data from form input using body parser, styling, header/footer templates, and API.
