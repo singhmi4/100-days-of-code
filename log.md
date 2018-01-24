@@ -1,5 +1,29 @@
 # 100 Days Of Code - Log
 
+### Day 10 January 24, 2018
+
+**Today's Progress**: Learned about using MongoDB in an Express application, and the RESTFUL methodology of web pages.
+
+**Thoughts:** 
+
+*Web Development:*
+
+I learned about how we can access a MongoDB in an Express web app by using Mongoose methods. The form data that the user entered in the ejs page was stored to the MongoDb by using the <code>Collection.Create()</code> method instead of pushing it to an array that is not stored on a database. I also learned about the types of web pages such as INDEX, NEW, and SHOW. INDEX and NEW were technically introduced when we created the campgrounds page and the new campground form page. However, the SHOW page is where we see more information about items in the index page. We can access that page by sending a get request to the /campgrounds/:id where :id needs to be populated by the id string in the database object. We use <code>Campground.findByID(req.params.id, function(err, foundCampground) to render the foundCampground object returned to the ejs file using {campground:foundCampground}. Then we use the <code><%= campground.var %></code> markup in the ejs to display the data in the webpage.
+
+**Link to Work:** Nothing yet
+
+### Day 9 January 23, 2018
+
+**Today's Progress**: Learned about MongoDB and NPM packaged Mongoose
+
+**Thoughts:** 
+
+*Web Development:*
+
+I learned about the differences between SQL and noSQL databases such as MongoDB, the method of installing mongoDB to Cloud 9, running Mongo in the terminal, and also using Mongoose based methods to create and add new data to databases. The commands I learned about in the mongo terminal were show, use, db.collection.find(), the update method (I can't remember the exact name at the moment), db.collection.remove(). The mongoose functions I learned about were creating a schema (pattern) and model to use Mongoose related methods such as create and "new".
+
+**Link to Work:** Nothing yet
+
 ### Day 8 January 22, 2018
 
 **Today's Progress**: Learned about the API NPM package request, created a Movie Database search engine, created an app called Yelp Camp using bootstrap, and node
