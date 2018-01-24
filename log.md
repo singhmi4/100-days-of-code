@@ -2,13 +2,17 @@
 
 ### Day 10 January 24, 2018
 
-**Today's Progress**: Learned about using MongoDB in an Express application, and the RESTFUL methodology of web pages.
+**Today's Progress**: Learned about using MongoDB in an Express application, and the RESTFUL methodology of web pages. In Unity, learned about adding particle effect and audio to weapon and added hit effect particle on objects that were hit. 
 
 **Thoughts:** 
 
 *Web Development:*
 
 I learned about how we can access a MongoDB in an Express web app by using Mongoose methods. The form data that the user entered in the ejs page was stored to the MongoDb by using the <code>Collection.Create()</code> method instead of pushing it to an array that is not stored on a database. I also learned about the types of web pages such as INDEX, NEW, and SHOW. INDEX and NEW were technically introduced when we created the campgrounds page and the new campground form page. However, the SHOW page is where we see more information about items in the index page. We can access that page by sending a get request to the /campgrounds/:id where :id needs to be populated by the id string in the database object. We use <code>Campground.findByID(req.params.id, function(err, foundCampground)</code> to render the foundCampground object returned to the ejs file using {campground:foundCampground}. Then we use the <code><%= campground.var %></code> markup in the ejs to display the data in the webpage.
+
+*Video Game Development:*
+
+Learned about adding a particle effect as a dependency game object to the weapon. Wrote a script which turned the object on by referencing the game object and setting it active using [SerializedField] and GameObject.setActive(true). I also learned about instantiating a hit effect by using the hitinfo.point method which takes the vector 3 position of the object that was hit. I also learned about rotating the instantiated hit effect to the direction perpendicular to the surface that was hit by using Quarternion.LookRotation(hitinfo.normal) where hitinfo.normal takes the vector perpendicular to the surface that was hit. I also learned how to destroy an instantiated game object without creating a new script and attaching it to that said game object by setting it to a variable GameObject hitmarker and using the typecast rule as GameObject. Then I applied the Destroy(hitmarker, 1f) method to remove game object after 1 second. Finally, I added an audio clip to play when shooting which utilized the AudioSource game component in the Weapon Game Object and then accessing it through the Player Script. We came across an issue which made the sound muffled because it kept playing ontop of an already playing clip. So we used an if statement which took in the argument audioSource.isPlaying == false which only played the audio if it stopped playing. We also used audioSource.Stop() to stop the audio.
 
 **Link to Work:** Nothing yet
 
