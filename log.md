@@ -1,5 +1,21 @@
 # 100 Days Of Code - Log
 
+### Day 11 January 25, 2018
+
+**Today's Progress**: In Unity Game Development, I learned about adding ammunition count and displaying that info in the UI. In web development, I learned more about the RESTful and CRUD structures and a new CSS framework called Semantic UI.
+
+**Thoughts:** 
+
+*Web Development:*
+
+A lot of the stuff learnt in today's lessons were refreshers of past knowledge such as the INDEX, NEW, and SHOW routes, but I did learn about the UPDATE, DELETE, and other routes in a nice table provided by the course instructor. Moreover, I learned about another CSS framework called Semantic UI which is very similar to Bootstrap except for minor class name differences. What's cool is that you don't have to link to the full Semantic CDN if you only require certain parts of it because there are CDNs for specific parts of Semantic.
+
+*Video Game Development:*
+
+Following the instructor, I wrote scripts for ammo count, reloading, and displaying ammo count on the UI. My method of reloading required a condition to check if the in game time has surpassed the in game time + reload time which was not what the instructor had in mind. What he did was create an IENumerator method which created the reload time cool down effect executed as a StartCoRoutine method. It was great seeing that used again since I haven't used that method in a long time.
+
+**Link to Work:** Nothing yet
+
 ### Day 10 January 24, 2018
 
 **Today's Progress**: Learned about using MongoDB in an Express application, and the RESTFUL methodology of web pages. In Unity, learned about adding particle effect and audio to weapon and added hit effect particle on objects that were hit. 
