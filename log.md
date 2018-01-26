@@ -1,5 +1,21 @@
 # 100 Days Of Code - Log
 
+### Day 12 January 26, 2018
+
+**Today's Progress**: In Unity Game Development, I learned about OnTriggerStay method, added a particle effect to an object, and updated the UI to show inventory.
+
+**Thoughts:** 
+
+*Video Game Development:*
+
+Following the instructor, I wrote a script that used OnTriggerStay which ran when the coin collided with the Player. OnTriggerStay is different than OnTriggerEnter since it is executed almost every frame. This allowed the Player to press the E key to pick up the coin, thus adding it to the inventory. The pick up sound was played by storing the audio file to a variable of type AudioClip and using the method AudioSource.PlayClipAtPoint(coin_clip, Camera.main.transform.position, volume_level). It was important to use this method of playing the sound rather than making an AudioSource component for the Coin and using AudioSource.Play() because it will let us play the sound right before the coin was destroyed. To show that the Player is in possession of the Coin, we created an Inventory Image child in the Canvas Game Object. In that Inventory Image, we created another Image child called Coin and dragged the pre-created Coin image as the Source Image. In the UIManager Script, we added a Game Object variable and stored the Coin Image Game Object Child in that field in the inspector. To finally show the image of the coin we created a method which was coinImage.setActive(true) after the coin was picked up. This method was executed in the Coin Script so we needed to gain access to the UIManager through script communication.
+
+*Web Development:*
+
+Will fill in later
+
+**Link to Work:** Nothing yet
+
 ### Day 11 January 25, 2018
 
 **Today's Progress**: In Unity Game Development, I learned about adding ammunition count and displaying that info in the UI. In web development, I learned more about the RESTful and CRUD structures and a new CSS framework called Semantic UI.
