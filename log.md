@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 13 January 29, 2018
+
+**Today's Progress**: Learned more style classes in Semantic UI and more ways to extract data using body-parser functions.
+
+**Thoughts:**
+
+I really liked Semantic UIs way of having meaningful class titles to show what is really being styled. I also need to remember to have a "/" before the stylesheet link or else the web page will assume that the stylesheet is coming from the current directory rather than the parent. We made 3 different input types with name attributes using the object blog[title], blog[image], and blog[body]. This will allow us to use req.body.blog in the app.post route which takes all the data from the form name attribute and add it to our array using Blog.create(req.body.blog, callback).
+
 ### Day 12 January 26, 2018
 
 **Today's Progress**: In Unity Game Development, I learned about OnTriggerStay method, added a particle effect to an object, and updated the UI to show inventory.
