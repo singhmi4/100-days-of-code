@@ -1,5 +1,23 @@
 # 100 Days Of Code - Log
 
+### Day 14 January 31, 2018
+
+**Today's Progress**: Added shop system, destructible, removed weapon clipping, and music to Sci-Fi tech demo. Added the edit, update, and delete routes for the Blog Website and also styled the home page using more Semantic UI styles.
+
+*Video Game Development:*
+
+Shop System implementation seemed very straightforward because it followed the same sort of logic as retrieving the coin from past lessons. The clipping problem was solved by using layers and a new camera for the weapon itself. First, we created a new camera and then we added a custom layer for the weapons. Next, we nested the Weapons Camera inside the Main Camera and set its position to (0, 0, 0) to give the illusion that the Player is only seeing  from one camera. Next, we nested the Weapon inside the Weapons Camera. We applied  the layer of Weapons to the Weapons Camera and all of the child objects inside. Next, we changed the weapons camera settings from Skybox to Depth so that it only shows the Weapon. Next, we unchecked all layers to show and selected only the Weapons Layer. For the main camera, we unchecked the Weapons layer. Next, to give off the illusion that the weapon is infront of any ingame object, we changed the Depth setting from 0 to 1 to give it priority when viewed through each camera. I would have never thought of this on my own, but it seems to make sense when you look at these objects as layers similar to the objects in the 2D Space Shooter game we developed earlier.
+
+*Web Development:*
+
+Adding the Edit, Update, and Delete routes required a new npm package called method-overrider. This is needed so that we can override the POST method that we can use in a form when we are submitting data to the server. We used several mongoose methods which built upon the Blog.FindByID method which were .FindByIDAndUpdate and .FindByIDAndRemoved. Those new methods were used for the update and delete routes for each blog post. Moreover, we allowed the user to enter html tags for the body posts by using <%- %>. An important issue with this arises from letting the user to enter javascript which can be dangerous if used to hack the website. To overcome this issue, we used the npm package express-sanitizer to not let <script> tags work in the body post by applying the req.sanitize(req.body.blog.body). the "req.body" section refers to the html body and the ".blog.body" section refers to the data inside the body element of the blog.
+  
+ **Link to Work:** Nothing yet
+ 
+**Thoughts:**
+
+I really liked Semantic UIs way of having meaningful class titles to show what is really being styled. I also need to remember to have a "/" before the stylesheet link or else the web page will assume that the stylesheet is coming from the current directory rather than the parent. We made 3 different input types with name attributes using the object blog[title], blog[image], and blog[body]. This will allow us to use req.body.blog in the app.post route which takes all the data from the form name attribute and add it to our array using Blog.create(req.body.blog, callback).
+
 ### Day 13 January 29, 2018
 
 **Today's Progress**: Learned more style classes in Semantic UI and more ways to extract data using body-parser functions.
@@ -17,10 +35,6 @@ I really liked Semantic UIs way of having meaningful class titles to show what i
 *Video Game Development:*
 
 Following the instructor, I wrote a script that used OnTriggerStay which ran when the coin collided with the Player. OnTriggerStay is different than OnTriggerEnter since it is executed almost every frame. This allowed the Player to press the E key to pick up the coin, thus adding it to the inventory. The pick up sound was played by storing the audio file to a variable of type AudioClip and using the method AudioSource.PlayClipAtPoint(coin_clip, Camera.main.transform.position, volume_level). It was important to use this method of playing the sound rather than making an AudioSource component for the Coin and using AudioSource.Play() because it will let us play the sound right before the coin was destroyed. To show that the Player is in possession of the Coin, we created an Inventory Image child in the Canvas Game Object. In that Inventory Image, we created another Image child called Coin and dragged the pre-created Coin image as the Source Image. In the UIManager Script, we added a Game Object variable and stored the Coin Image Game Object Child in that field in the inspector. To finally show the image of the coin we created a method which was coinImage.setActive(true) after the coin was picked up. This method was executed in the Coin Script so we needed to gain access to the UIManager through script communication.
-
-*Web Development:*
-
-Will fill in later
 
 **Link to Work:** Nothing yet
 
