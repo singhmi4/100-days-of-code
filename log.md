@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 15 February 8, 2018
+
+**Today's Progress**: After returning from a much longer hiatus than anticipated, I learned about data associations using Mongoose. I also learned about compartmentilizing the main app.js file by using module.exports.
+
+*Web Development:*
+
+I learned how to associate Mongoose models together by referencing the schema of one model as an array. After, I used the array method .push to add data to the model that is being nested in the parent model. For example, I created the model called User which has another model called post that is one of its objects. I created a new User by using the new User method and then added data to the User by using User.post.push(). Next, I retrieved the contents of that post by using the mongoose method findOne.populate.exec(callback). Finally, I was introduced to refactoring the main app.js file by creating separate .js files which contained the User and Post mongoose schemas and models. To properly link to those files, I used the method module.exports in the respective files and used require("user") in the main app.js file.
+
 ### Day 14 January 31, 2018
 
 **Today's Progress**: Added shop system, destructible, removed weapon clipping, and music to Sci-Fi tech demo. Added the edit, update, and delete routes for the Blog Website and also styled the home page using more Semantic UI styles.
